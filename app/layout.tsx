@@ -12,7 +12,7 @@ const jakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   title: "Wellbeing Hub - Quality Healthcare, Anytime, Anywhere",
   description:
-    "Wellbeing Hub connects patients with qualified doctors for secure consultations, personalized guidance, and better healthcare experiences.",
+    "Book verified doctors, diagnostic tests, wellbeing services and health packages across partner hospitals. One place for consultations, health cards and your medical records.",
 }
 
 export default function RootLayout({

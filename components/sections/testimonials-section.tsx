@@ -12,45 +12,55 @@ import {
 import { FadeIn } from "@/components/motion/fade-in"
 import { SectionHeading } from "@/components/sections/section-heading"
 
+/**
+ * PLACEHOLDER CONTENT - NOT REAL REVIEWS.
+ *
+ * These are illustrative and must be replaced with genuine, attributable
+ * patient reviews before this section is published. Fabricated testimonials
+ * on a health service are a trust and compliance exposure, not filler copy.
+ *
+ * Quotes below deliberately reference only capability the platform actually
+ * has, so replacements stay truthful even if the copy is reused.
+ */
 const TESTIMONIALS = [
   {
     name: "Fahmida R.",
-    tag: "Family plan user",
+    tag: "Health Card holder",
     quote:
-      "I claimed hospital cashback and received it within a week. The process was genuinely simple.",
+      "Seeing the consultation fee before I confirmed made a real difference. No surprises at the counter.",
     bg: "bg-[#2a5be0]",
   },
   {
     name: "Rajib H.",
-    tag: "Health plan user",
+    tag: "Patient",
     quote:
-      "Whenever my daughter needed a doctor at night, Wellbeing Hub doctors were always available and kind.",
+      "My daughter needed a doctor and we did the consultation by video the same day, from home.",
     bg: "bg-[#19b8a6]",
   },
   {
     name: "Kamrul B.",
-    tag: "Health plan user",
+    tag: "Health Card holder",
     quote:
-      "The discounts at partner hospitals saved me real money during a difficult time. Grateful.",
+      "Being able to compare test prices across hospitals before booking saved us a lot.",
     bg: "bg-[#1c3a8f]",
   },
   {
     name: "Sharmin A.",
-    tag: "Family plan user",
+    tag: "Patient",
     quote:
-      "Medicine arrived the same evening I uploaded the prescription. My parents rely on it now.",
+      "My father's prescriptions and reports are finally in one place instead of a folder at home.",
     bg: "bg-[#0e9c84]",
   },
   {
     name: "Tanvir I.",
-    tag: "Corporate client",
+    tag: "Patient",
     quote:
-      "Our company wellness camp was arranged end to end. Employees still talk about it.",
+      "Booking the health package was straightforward, and I could see exactly what was included.",
     bg: "bg-[#d1571f]",
   },
   {
     name: "Nusrat J.",
-    tag: "Health plan user",
+    tag: "Patient",
     quote:
       "Booked a specialist for my father in a district town - something we never managed before.",
     bg: "bg-[#5b6fe8]",
@@ -78,7 +88,7 @@ export function TestimonialsSection() {
   }, [api])
 
   return (
-    <section className="bg-white px-4 py-16 sm:px-6 lg:px-0">
+    <section className="bg-[#f6f8fd] px-4 py-16 sm:px-6 lg:px-0">
       <div className="mx-auto w-full max-w-[1240px]">
         <FadeIn className="mb-[34px] text-center">
           <SectionHeading

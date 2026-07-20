@@ -1,10 +1,17 @@
 import { Stagger, StaggerItem } from "@/components/motion/stagger"
 
+/**
+ * NOTE: these describe how the platform works, not performance history.
+ * Any volume claim here (patients served, hospitals onboarded, consultations
+ * completed) must be replaced with a figure the business can substantiate
+ * before it is published. Unverified metrics on a health service are a
+ * regulatory and trust risk, not a copy decision.
+ */
 const STATS = [
-  { value: "1 Cr+", label: "Patients served" },
-  { value: "500+", label: "Partner hospitals" },
-  { value: "16 L+", label: "Consultations done" },
-  { value: "64", label: "Districts covered" },
+  { value: "24/7", label: "Telemedicine access" },
+  { value: "100%", label: "Verified doctors" },
+  { value: "4", label: "Ways to book care" },
+  { value: "1", label: "Card, every partner" },
 ]
 
 /** Trust stats band, presented as a contained panel. */

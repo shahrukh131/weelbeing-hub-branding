@@ -1,29 +1,30 @@
-import { Building2, Pill, Stethoscope, Upload, Wallet } from "lucide-react"
+import { FlaskConical, HeartPulse, Stethoscope, Wallet } from "lucide-react"
 
 import { FadeIn } from "@/components/motion/fade-in"
 import { Stagger, StaggerItem } from "@/components/motion/stagger"
 import { SectionHeading } from "@/components/sections/section-heading"
+import { CallbackTrigger } from "@/components/callback/callback-trigger"
 
 const SERVICES = [
   {
     icon: Wallet,
     title: "Health card",
-    body: "Free consultations, discounted tests, and hospital billing support for your whole family.",
+    body: "Consultation benefits and discounted tests across every partner hospital, tracked as you use them.",
   },
   {
-    icon: Pill,
-    title: "Medicine delivery",
-    body: "Upload a prescription and get medicine delivered to your doorstep in a few steps.",
+    icon: FlaskConical,
+    title: "Diagnostic tests",
+    body: "Book tests at partner hospitals with clear pricing, preparation guidance and turnaround times.",
   },
   {
-    icon: Building2,
-    title: "Medical tourism",
-    body: "End-to-end support for treatment abroad - travel, appointments, and hassle-free care.",
+    icon: HeartPulse,
+    title: "Wellbeing services",
+    body: "Preventive and lifestyle care beyond the chamber - nutrition, therapy and physiotherapy sessions.",
   },
   {
     icon: Stethoscope,
     title: "Doctor consult",
-    body: "Consult experienced doctors securely and conveniently, whenever you need to.",
+    body: "Consult experienced doctors securely and conveniently, by video or in person.",
   },
 ]
 
@@ -61,20 +62,16 @@ export function ServiceSection() {
           <div className="flex flex-wrap items-center justify-between gap-4 rounded-2xl bg-[linear-gradient(90deg,#1c3a8f,#2a5be0)] p-[22px_28px] text-white">
             <div>
               <div className="text-[16px] font-bold">
-                Have a prescription? Order medicine now.
+                Every visit, kept in one place.
               </div>
               <p className="mt-1 text-[12.5px] text-white/85">
-                Upload a photo of your prescription and we&apos;ll deliver to
-                your door.
+                Consultations, prescriptions and test records stay with you -
+                not scattered across hospitals.
               </p>
             </div>
-            <button
-              type="button"
-              className="inline-flex items-center gap-2 rounded-[10px] bg-white px-5 py-[11px] text-[12.5px] font-bold text-[#1c46c2] transition-colors hover:bg-[#f0f5ff]"
-            >
-              <Upload className="size-4" />
-              Upload prescription
-            </button>
+            <CallbackTrigger className="inline-flex items-center gap-2 rounded-[10px] bg-white px-5 py-[11px] text-[12.5px] font-bold text-[#1c46c2] transition-colors hover:bg-[#f0f5ff]">
+              Get started
+            </CallbackTrigger>
           </div>
         </FadeIn>
       </div>

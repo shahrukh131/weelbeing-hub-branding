@@ -5,19 +5,27 @@ import { Logo } from "@/components/layout/logo"
 const COLUMNS = [
   {
     title: "Links",
-    items: ["About Us", "Doctors", "B2B Hospital", "Services", "Media"],
+    items: [
+      "About Us",
+      "For Doctors",
+      "For Hospitals",
+      "For Agents",
+      "Media",
+    ],
   },
   {
     title: "Services",
     items: [
-      "Patient Resources",
-      "Payment Options",
-      "Telemedicine",
-      "Insurance",
-      "Appointment Booking",
+      "Doctor Consultations",
+      "Diagnostic Tests",
+      "Wellbeing Services",
+      "Health Packages",
+      "Health Card",
     ],
   },
 ]
+
+const LEGAL = ["Terms of Service", "Privacy Policy", "Refund Policy"]
 
 const CONTACTS = [
   { icon: MapPin, value: "Dhaka, Bangladesh" },
@@ -71,10 +79,31 @@ export function SiteFooter() {
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-between gap-4 border-t border-white/10 py-[18px] sm:flex-row">
-          <p className="text-[11.5px] text-[#aab3cc]">
-            © 2026 Wellbeing Hub. All rights reserved.
+        <div className="border-t border-white/10 pt-[18px]">
+          <p className="text-[11.5px] leading-[1.6] text-[#8b96b8]">
+            Wellbeing Hub supports scheduled consultations and planned care, and
+            is not a substitute for emergency medical services. In an emergency,
+            contact your nearest emergency department immediately.
           </p>
+        </div>
+
+        <div className="flex flex-col items-center justify-between gap-4 border-t border-white/10 py-[18px] sm:flex-row">
+          <div className="flex flex-col items-center gap-2 sm:items-start">
+            <p className="text-[11.5px] text-[#aab3cc]">
+              © 2026 Wellbeing Hub. All rights reserved.
+            </p>
+            <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
+              {LEGAL.map((item) => (
+                <a
+                  key={item}
+                  href="#"
+                  className="text-[11.5px] text-[#aab3cc] transition-colors hover:text-white"
+                >
+                  {item}
+                </a>
+              ))}
+            </div>
+          </div>
           <div className="flex flex-wrap items-center gap-2">
             {PAYMENTS.map((m) => (
               <span

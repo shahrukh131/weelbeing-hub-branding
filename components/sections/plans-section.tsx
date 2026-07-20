@@ -5,56 +5,72 @@ import { FadeIn } from "@/components/motion/fade-in"
 import { Stagger, StaggerItem } from "@/components/motion/stagger"
 import { SectionHeading } from "@/components/sections/section-heading"
 
+/**
+ * Health Card tiers.
+ *
+ * Tiers and benefits are defined by the platform, not by individual hospitals
+ * (SRS 4.6, 5.6). Partner hospitals issue the same standardised tiers under
+ * their own branding.
+ *
+ * NOTE: tier names, pricing and benefit lines below are illustrative. They
+ * must be replaced with the confirmed tier definitions before publishing -
+ * the SRS never enumerates them.
+ */
 const PLANS = [
   {
-    name: "Health",
+    name: "Individual",
     price: "৳299",
-    period: "/mo",
+    period: "/year",
     featured: false,
-    cta: "Get started",
-    features: ["24/7 telemedicine", "500+ hospital discounts", "Medicine cashback"],
+    cta: "View benefits",
+    features: [
+      "Video consultation benefits",
+      "Discounted tests at partner hospitals",
+      "Benefit usage tracked in your wallet",
+    ],
   },
   {
     name: "Family",
     price: "৳799",
-    period: "/mo",
+    period: "/year",
     featured: true,
-    cta: "Get started",
+    cta: "View benefits",
     features: [
-      "Everything in Health",
+      "Everything in Individual",
       "Cover up to 5 members",
-      "Specialist consultations",
-      "Hospital cashback",
+      "Specialist consultation benefits",
+      "Shared benefit tracking",
     ],
   },
   {
-    name: "Corporate",
-    price: "Custom",
-    period: "",
+    name: "Family Plus",
+    price: "৳1,299",
+    period: "/year",
     featured: false,
-    cta: "Contact sales",
+    cta: "View benefits",
     features: [
-      "Tailored employee cover",
-      "Cashless facility",
-      "Dedicated account manager",
-      "B2B billing",
+      "Everything in Family",
+      "Higher consultation entitlement",
+      "Wellbeing service benefits",
+      "Priority booking support",
     ],
   },
 ]
 
 export function PlansSection() {
   return (
-    <section id="plans" className="bg-[#f6f8fd] py-[60px]">
+    <section id="plans" className="bg-white py-[60px]">
       <div className="mx-auto w-full max-w-[1240px] px-4 sm:px-6 lg:px-0">
         <FadeIn className="mb-[34px]">
           <SectionHeading
             align="center"
             eyebrow="Choose your cover"
-            title="Membership plans"
+            title="Health Card"
             className="mx-auto"
           />
           <p className="mt-2 text-center text-[13px] text-[#6b7490]">
-            Simple monthly plans for individuals, families, and companies.
+            One card, accepted at every partner hospital. Standard benefits, no
+            fine print - and everything you use is tracked for you.
           </p>
         </FadeIn>
 

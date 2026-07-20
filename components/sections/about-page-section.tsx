@@ -96,10 +96,10 @@ const WHY_ROWS = [
 const TESTIMONIALS = [
   {
     quote:
-      "I claimed hospital cashback and received it within a week. The process was genuinely simple.",
+      "Seeing the consultation fee before I confirmed made a real difference. No surprises at the counter.",
     initial: "F",
     name: "Fahmida R.",
-    role: "Family plan user",
+    role: "Health Card holder",
     className: "bg-[#2a5be0]",
   },
   {
@@ -310,9 +310,9 @@ export function AboutPageSection() {
               title="Built on trust, designed for families"
             />
             <p className="mt-4 max-w-[400px] text-[13.5px] leading-[1.7] text-[#5b6478]">
-              Every part of our service - from booking to cashback - is
-              designed so that caring for your family feels simple,
-              transparent, and dependable.
+              Every part of our service - from finding a doctor to keeping your
+              records - is designed so that caring for your family feels
+              simple, transparent, and dependable.
             </p>
             <CallbackTrigger className="mt-6 rounded-[10px] bg-[#2a5be0] px-6 py-3 text-[13px] font-bold text-white transition-colors hover:bg-[#1c46c2]">
               Get started today

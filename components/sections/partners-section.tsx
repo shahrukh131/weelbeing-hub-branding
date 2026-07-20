@@ -13,7 +13,7 @@ export function PartnersSection() {
   return (
     <section
       id="partners"
-      className="mx-auto w-full max-w-[1240px] px-4 pb-11 sm:px-6 lg:px-0"
+      className="mx-auto w-full max-w-[1240px] px-4 pb-8 sm:px-6 lg:px-0 mt-5"
     >
       <p className="mb-4 text-center text-[10.5px] font-extrabold tracking-[.14em] text-[#8b96b8] uppercase">
         Trusted by leading partners

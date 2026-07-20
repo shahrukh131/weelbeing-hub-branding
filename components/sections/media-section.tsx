@@ -35,8 +35,8 @@ const ARTICLES = [
   },
   {
     tag: "Announcement",
-    title: "12 new partner hospitals added this quarter",
-    body: "Cashless facility now available in more district towns.",
+    title: "New partner hospitals join the network",
+    body: "More doctors, tests and wellbeing services now bookable in district towns.",
   },
   {
     tag: "Health tips",

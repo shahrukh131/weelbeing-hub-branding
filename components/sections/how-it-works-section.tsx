@@ -1,4 +1,4 @@
-import { ClipboardCheck, Phone, Stethoscope } from "lucide-react"
+import { CalendarCheck, FileHeart, Search } from "lucide-react"
 
 import { FadeIn } from "@/components/motion/fade-in"
 import { Stagger, StaggerItem } from "@/components/motion/stagger"
@@ -6,21 +6,21 @@ import { SectionHeading } from "@/components/sections/section-heading"
 
 const STEPS = [
   {
-    icon: Phone,
-    title: "Request a callback",
-    body: "Tell us what you need and pick a time that suits you.",
+    icon: Search,
+    title: "Find your care",
+    body: "Search partner hospitals and doctors, and compare tests, services and packages.",
     iconClass: "bg-[#e9f0ff] text-[#2a5be0]",
   },
   {
-    icon: Stethoscope,
-    title: "Talk to a doctor",
-    body: "Get an audio or video consult in minutes, any hour.",
+    icon: CalendarCheck,
+    title: "Book and pay",
+    body: "Pick a real available slot, see the price upfront, and confirm in one step.",
     iconClass: "bg-[#2a5be0] text-white",
   },
   {
-    icon: ClipboardCheck,
-    title: "Get care & cashback",
-    body: "Order medicine, book tests, and claim your benefits fast.",
+    icon: FileHeart,
+    title: "Get care, keep records",
+    body: "Attend by video or in person - prescriptions and results stay in your records.",
     iconClass: "bg-[#2a5be0] text-white",
   },
 ]
@@ -36,7 +36,7 @@ export function HowItWorksSection() {
             title="How it works"
           />
           <p className="mt-2 text-center text-[13px] text-[#6b7490]">
-            From callback to cashback, we keep it easy.
+            From search to consultation, we keep it simple.
           </p>
         </FadeIn>
 

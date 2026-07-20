@@ -75,8 +75,10 @@ export function CallbackDialog({ open, onOpenChange }: CallbackDialogProps) {
                   Service — Know more
                 </NativeSelectOption>
                 <NativeSelectOption>Book appointment</NativeSelectOption>
-                <NativeSelectOption>Order medicine</NativeSelectOption>
-                <NativeSelectOption>Corporate plan</NativeSelectOption>
+                <NativeSelectOption>Book a test</NativeSelectOption>
+                <NativeSelectOption>Wellbeing service</NativeSelectOption>
+                <NativeSelectOption>Health package</NativeSelectOption>
+                <NativeSelectOption>Health Card</NativeSelectOption>
               </NativeSelect>
               <NativeSelect className="w-full [&>select]:h-11" defaultValue="">
                 <NativeSelectOption value="" disabled>

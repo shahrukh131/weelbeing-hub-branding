@@ -1,12 +1,12 @@
-import { CalendarCheck, HeartPulse, Search, Upload } from "lucide-react"
+import { CalendarCheck, FlaskConical, HeartPulse, Search } from "lucide-react"
 
 import { Stagger, StaggerItem } from "@/components/motion/stagger"
 
 const ACTIONS = [
   { icon: CalendarCheck, label: "Book appointment", sub: "With leading experts" },
   { icon: Search, label: "Find a doctor", sub: "Search by specialty" },
-  { icon: HeartPulse, label: "Health checkup", sub: "Packages from ৳990" },
-  { icon: Upload, label: "Order medicine", sub: "Upload prescription" },
+  { icon: FlaskConical, label: "Book a test", sub: "Compare partner prices" },
+  { icon: HeartPulse, label: "Health packages", sub: "Bundled checkups" },
 ]
 
 export function QuickActions() {

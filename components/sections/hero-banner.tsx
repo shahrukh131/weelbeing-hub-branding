@@ -14,8 +14,8 @@ export function HeroBanner() {
             Your health comes first, every time.
           </h1>
           <p className="mt-[18px] max-w-[420px] text-[14.5px] leading-[1.65] text-[#5b6478]">
-            Wellbeing Hub connects Bangladeshi families with trusted doctors,
-            discounted hospitals, and medicine at your doorstep - all in one
+            Wellbeing Hub connects Bangladeshi families with verified doctors,
+            partner hospitals, and the tests and care they need - booked in one
             place.
           </p>
           <div className="mt-[26px] flex flex-wrap gap-3">
